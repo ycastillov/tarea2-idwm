@@ -1,0 +1,91 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Personal</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #38bdf8, #10b981); /* Gradiente verde */
+    }
+  </style>
+</head>
+
+  <body class="font-serif text-white">
+
+    <!-- Barra superior fija -->
+    <nav class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-[#38bdf8] text-white px-4 py-2 rounded-lg shadow-lg z-50">
+        <div class="flex space-x-4">
+        <a href="#habilidades" class="hover:underline">Habilidades</a>
+        <a href="#proyectos" class="hover:underline">Proyectos</a>
+        <a href="#sobremi" class="hover:underline">Sobre mí</a>
+        </div>
+    </nav>
+  
+  
+    <!-- Contenido principal -->
+    <div class="pt-20">
+      <!-- Sección Habilidades -->
+      <section id="habilidades" class="min-h-screen flex flex-col items-center justify-center">
+        <div class="text-center">
+          <img [src]="imagePath" alt="Foto de perfil" class="w-24 h-24 rounded-full mx-auto">
+          <h2 class="text-3xl mt-4 font-bold">Soy ycastillov</h2>
+          <p class="text-xl mt-4">Estudiante de Ing. Civil en Comp. e Informática en la Universidad Católica del Norte.</p>
+          <p class="text-xl mt-4">Interesado en la Ingeniería de Software y desarrollo de videojuegos. </p>
+          <a href="#" class="mt-4 inline-block bg-white text-green-600 font-semibold px-6 py-2 rounded-full">GitHub</a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 mt-10 w-full max-w-4xl px-4">
+          <!-- Habilidades Técnicas -->
+          <div class="flex flex-col items-center text-center">
+            <h2 class="text-xl font-semibold">Habilidades Técnicas</h2>
+            <ul class="mt-4 list-disc list-inside">
+              <li class="mb-2 text-lg">Desarrollo web full stack</li>
+              <li class="mb-2 text-lg">Conocimientos en Python, Java y C#</li>
+              <li class="mb-2 text-lg">Uso de GitHub</li>
+            </ul>
+          </div>
+          <!-- Habilidades Blandas -->
+          <div class="flex flex-col items-center text-center">
+            <h2 class="text-xl font-semibold">Habilidades Blandas</h2>
+            <ul class="mt-4 list-disc list-inside">
+              <li class="mb-2 text-lg">Liderazgo</li>
+              <li class="mb-2 text-lg">Trabajo en equipo</li>
+              <li class="mb-2 text-lg">Proactivo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Sección Proyectos -->
+      <section id="proyectos" class="min-h-screen flex flex-col items-center justify-center">
+        <h2 class="text-3xl font-bold mb-8">Proyectos</h2>
+        <div class="grid grid-cols-2 md:grid-cols-1 gap-8 w-full max-w-4xl px-4">
+          
+            <a class="flex flex-col items-center md:flex-row md:max-w-xl ">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight ">End's Tale</h5>
+                    <p class="mb-3 font-normal text-lg">Videojuego de plataformas que presenta la historia de un robot llamado End y su aventura en un planeta lejano. Desarrollado el año 2023 con Unity.</p>
+                </div>
+            </a>
+            <a class="flex flex-col items-center md:flex-row md:max-w-xl ">
+                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight">Product's Battle</h5>
+                    <p class="mb-3 font-normal text-lg">Videojuego con mecánicas rápidas de deslizamiento en pantalla para enfrentar distintos enemigos. Desarrollado el año 2024 con Unity.</p>
+                </div>
+            </a>
+        </div>
+      </section>
+  
+      <!-- Sección Sobre mí -->
+      <section id="sobremi" class="min-h-screen flex items-center justify-center">
+        <div class="text-center max-w-2xl">
+          <h2 class="text-3xl font-bold mb-4">Sobre mí</h2>
+          <p class="text-lg mb-4">Mi nombre es Yamir Castillo, actualmente estoy en mi tercer año estudiando Ingeniería Civil en Computación e Informática en la Universidad Católica del Norte. 
+                            Mi pasión con el mundo de la tecnología y los videojuegos fue lo que me impulsó a dedicarme a esto. 
+          <p class="text-lg mb-4">Mis principales intereses profesionales recaen en el desarrollo de videojuegos, o bien, formar parte de alguna empresa de renombre.
+                            Aspirando en ambos a formar un grato ambiente de trabajo.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
