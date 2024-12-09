@@ -4,7 +4,7 @@
   <title>Portafolio Personal</title>
   <style>
     body {
-      background: linear-gradient(to bottom, #38bdf8, #10b981); /* Gradiente verde */
+      background: linear-gradient(to bottom, #10b981, #38bdf8); /* Gradiente verde */
     }
   </style>
 </head>
@@ -14,9 +14,7 @@
     <!-- Barra superior fija -->
     <nav class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-[#38bdf8] text-white px-4 py-2 rounded-lg shadow-lg z-50">
         <div class="flex space-x-4">
-        <a href="#habilidades" class="hover:underline">Habilidades</a>
-        <a href="#proyectos" class="hover:underline">Proyectos</a>
-        <a href="#sobremi" class="hover:underline">Sobre mí</a>
+        <a href="/contact" class="hover:underline">Contacto</a>
         </div>
     </nav>
   
@@ -26,11 +24,11 @@
       <!-- Sección Habilidades -->
       <section id="habilidades" class="min-h-screen flex flex-col items-center justify-center">
         <div class="text-center">
-          <img [src]="imagePath" alt="Foto de perfil" class="w-24 h-24 rounded-full mx-auto">
+          <img src="assets/icon.jpeg" alt="Foto de perfil" class="w-24 h-24 rounded-full mx-auto">
           <h2 class="text-3xl mt-4 font-bold">Soy ycastillov</h2>
           <p class="text-xl mt-4">Estudiante de Ing. Civil en Comp. e Informática en la Universidad Católica del Norte.</p>
           <p class="text-xl mt-4">Interesado en la Ingeniería de Software y desarrollo de videojuegos. </p>
-          <a href="#" class="mt-4 inline-block bg-white text-green-600 font-semibold px-6 py-2 rounded-full">GitHub</a>
+          <a href="https://github.com/ycastillov" class="mt-4 inline-block bg-white text-green-600 font-semibold px-6 py-2 rounded-full">GitHub</a>
         </div>
         <div class="grid grid-cols-2 gap-8 mt-10 w-full max-w-4xl px-4">
           <!-- Habilidades Técnicas -->
@@ -55,26 +53,40 @@
       </section>
   
       <!-- Sección Proyectos -->
-      <section id="proyectos" class="min-h-screen flex flex-col items-center justify-center">
-        <h2 class="text-3xl font-bold mb-8">Proyectos</h2>
-        <div class="grid grid-cols-2 md:grid-cols-1 gap-8 w-full max-w-4xl px-4">
-          
-            <a class="flex flex-col items-center md:flex-row md:max-w-xl ">
-                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight ">End's Tale</h5>
-                    <p class="mb-3 font-normal text-lg">Videojuego de plataformas que presenta la historia de un robot llamado End y su aventura en un planeta lejano. Desarrollado el año 2023 con Unity.</p>
-                </div>
-            </a>
-            <a class="flex flex-col items-center md:flex-row md:max-w-xl ">
-                <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/docs/images/blog/image-4.jpg" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight">Product's Battle</h5>
-                    <p class="mb-3 font-normal text-lg">Videojuego con mecánicas rápidas de deslizamiento en pantalla para enfrentar distintos enemigos. Desarrollado el año 2024 con Unity.</p>
-                </div>
-            </a>
+    <section id="proyectos" class="min-h-screen flex flex-col items-center justify-center">
+        <h2 class="text-3xl font-bold mb-8 text-center">Proyectos</h2>
+        <div class="grid grid-cols-1 gap-8 w-full max-w-4xl px-4">
+        <!-- Proyecto 1 -->
+        <div class="flex flex-col md:flex-row items-center md:items-center justify-center text-center  rounded-lg shadow-lg">
+            <img
+            class="object-cover w-full h-48 md:w-48 md:h-auto rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+            src="assets/endstale.png"
+            alt="Imagen del proyecto End's Tale"
+            />
+            <div class="flex flex-col justify-between p-4">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight">End's Tale</h5>
+            <p class="mb-3 font-normal text-lg">
+                Videojuego de plataformas que presenta la historia de un robot llamado End y su aventura en un planeta lejano. Desarrollado el año 2023 con Unity.
+            </p>
+            </div>
         </div>
-      </section>
+    
+        <!-- Proyecto 2 -->
+        <div class="flex flex-col md:flex-row items-center md:items-center justify-center text-center rounded-lg shadow-lg">
+            <img
+            class="object-cover w-full h-48 md:w-48 md:h-auto rounded-t-lg md:rounded-l-lg md:rounded-t-none"
+            src="assets/productsbattle.png"
+            alt="Imagen del proyecto Product's Battle"
+            />
+            <div class="flex flex-col justify-between p-4">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight">Product's Battle</h5>
+            <p class="mb-3 font-normal text-lg">
+                Videojuego con mecánicas rápidas de deslizamiento en pantalla para enfrentar distintos enemigos. Desarrollado el año 2024 con Unity.
+            </p>
+            </div>
+        </div>
+        </div>
+    </section>
   
       <!-- Sección Sobre mí -->
       <section id="sobremi" class="min-h-screen flex items-center justify-center">
@@ -89,3 +101,5 @@
       </section>
     </div>
   </body>
+
+  

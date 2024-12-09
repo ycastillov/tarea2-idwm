@@ -1,0 +1,55 @@
+<div class="min-h-screen bg-gradient-to-b from-green-400 to-green-600 flex items-center justify-center">
+    <div class="fixed top-10 right-10 bg-blue-500 text-white p-2 rounded hover:bg-blue-700">  
+        <a
+            href="/home" class="btn btn-primary font-serif"> Volver
+        </a>
+    </div>
+    <form class="bg-white shadow-md rounded px-10 py-8 w-96 md:w-[600px]">
+      <h1 class="text-3xl font-bold font-serif mb-6 text-center">Contacto</h1>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-serif font-bold mb-2" for="email">
+          Correo Electrónico
+        </label>
+        <input
+          id="email"
+          type="email"
+          placeholder="tuemail@example.com"
+          class="shadow appearance-none border font-serif rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          [disabled]="isSubmitting"
+        />
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-serif font-bold mb-2" for="description">
+          Descripción
+        </label>
+        <textarea
+          id="description"
+          rows="6"
+          placeholder="Escriba por qué desea contactarme..."
+          class="shadow appearance-none border font-serif rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          [disabled]="isSubmitting"
+        ></textarea>
+      </div>
+      <button
+        type="button"
+        id="submit-button"
+        class="bg-[#38bdf8] hover:bg-blue-700 text-white font-serif font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline w-full"
+        (click)="onSubmit()"
+        [disabled]="isSubmitting"
+      >
+        Enviar
+      </button>
+  
+      <!-- Barra de progreso -->
+      <div
+        class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-4"
+        *ngIf="isSubmitting" 
+      > 
+        <div
+          class="bg-blue-600 h-2.5 rounded-full"
+          [style.width.%]="progress"
+        ></div>
+        <div class="text-gray-700 text-sm font-serif font-bold mb-2">Enviando...</div>
+      </div>
+    </form>
+  </div>

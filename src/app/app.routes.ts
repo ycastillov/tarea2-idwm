@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
     {
@@ -6,6 +7,13 @@ export const routes: Routes = [
         loadComponent: () =>
             import('./pages/home/home.component').then(
                 (m) => m.HomeComponent
+            )
+    },
+    {
+        path: 'contact',
+        loadComponent: () =>
+            import('./pages/contact/contact.component').then(
+                (m) => m.ContactComponent
             )
     }
     ,
